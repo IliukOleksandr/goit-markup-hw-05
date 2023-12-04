@@ -684,6 +684,7 @@ p {
   + .review-form-checkbox-label
   > .review-form-own-checkbox {
   background-color: #404bbf;
+  fill: #f4f4fd;
   border: none;
 }
 
@@ -697,7 +698,6 @@ p {
   + .review-form-checkbox-label
   .review-form-own-checkbox-icon {
   opacity: 1;
-  fill: #f4f4fd;
 }
 
 .review-form-checkbox-label {
