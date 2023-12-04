@@ -538,6 +538,9 @@ p {
   background-color: #fcfcfc;
   border-radius: 4px;
   padding: 72px 24px 24px 24px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -671,6 +674,7 @@ p {
 .review-form-own-checkbox-icon {
   fill: #f4f4fd;
   opacity: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-checkbox:checked
@@ -704,7 +708,10 @@ p {
 .review-form-submit-btn {
   min-width: 169px;
   height: 56px;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   padding: 16px 32px;
   margin-left: auto;
   margin-right: auto;
@@ -717,11 +724,12 @@ p {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-submit-btn:hover,
 .review-form-submit-btn:focus {
   background-color: #404bbf;
+  border: none;
 }
